@@ -8,7 +8,6 @@ module Amber::DSL
   record Router, router : Pipe::Router, valve : Symbol, scope : String do
     RESOURCES = [:get, :post, :put, :patch, :delete, :options, :head, :trace, :connect]
 
-
     macro route(verb, resource, controller, action)
 
       puts "{{verb.id}}  {{resource.id}}   {{controller.id}}   {{action.id}}"
